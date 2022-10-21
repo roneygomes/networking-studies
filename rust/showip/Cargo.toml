@@ -1,0 +1,7 @@
+[package]
+name = "showip"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dns-lookup = "1.0.8"
