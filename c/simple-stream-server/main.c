@@ -129,6 +129,8 @@ int main(void) {
         return 1;
     }
 
+    freeaddrinfo(host_addr);
+
     if (listen(socket_fd, BACKLOG) == -1) {
         perror("failed to listen to socket");
         return 1;

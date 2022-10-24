@@ -2,3 +2,4 @@
 **/cmake-build-debug/
 **/CMakeFiles/
 **/target/
+**/.DS_Store
