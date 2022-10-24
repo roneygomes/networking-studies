@@ -54,7 +54,7 @@ ssize_t write_to_socket(int socket_fd, char *message, struct addrinfo *host_addr
     num_bytes = sendto(socket_fd, message, strlen(message), flags, host_addr->ai_addr, host_addr->ai_addrlen);
 
     if (num_bytes == -1) {
-        perror("failed to read from socket");
+        perror("failed to write to socket");
         return -1;
     }
 
